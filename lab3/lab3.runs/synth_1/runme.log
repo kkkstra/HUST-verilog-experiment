@@ -1,0 +1,272 @@
+
+*** Running vivado
+    with args -log dynamic_scan.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dynamic_scan.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source dynamic_scan.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 486.340 ; gain = 179.164
+Command: read_checkpoint -auto_incremental -incremental C:/Data/course/verilog/Labs/lab3/lab3.srcs/utils_1/imports/synth_1/divider.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Data/course/verilog/Labs/lab3/lab3.srcs/utils_1/imports/synth_1/divider.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top dynamic_scan -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21368
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1339.395 ; gain = 441.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dynamic_scan' [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-6.v:23]
+INFO: [Synth 8-6157] synthesizing module 'divider_and_counter' [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'divider' (0#1) [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'divider_and_counter' (0#1) [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder3_8' [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder3_8' (0#1) [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-5.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rom8x4' [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rom8x4' (0#1) [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pattern' [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-5.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'pattern' (0#1) [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-5.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'dynamic_scan' (0#1) [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-6.v:23]
+WARNING: [Synth 8-6014] Unused sequential element N_reg was removed.  [C:/Data/course/verilog/Labs/lab3/lab3.srcs/sources_1/new/lab3-1.v:40]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1445.547 ; gain = 547.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1445.547 ; gain = 547.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1445.547 ; gain = 547.277
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1445.547 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'out[0]'. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[1]'. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[2]'. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data[0]'. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data[1]'. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data[2]'. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data[3]'. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Data/course/verilog/Labs/lab3/lab3.srcs/constrs_1/new/lab3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dynamic_scan_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dynamic_scan_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1473.031 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1473.031 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:54 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:54 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:54 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:54 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:54 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:54 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     1|
+|4     |LUT2   |    11|
+|5     |LUT3   |    14|
+|6     |LUT4   |     1|
+|7     |LUT5   |    23|
+|8     |LUT6   |     1|
+|9     |FDRE   |    36|
+|10    |IBUF   |     4|
+|11    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:54 . Memory (MB): peak = 1473.031 ; gain = 574.762
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:50 . Memory (MB): peak = 1473.031 ; gain = 547.277
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:54 . Memory (MB): peak = 1473.031 ; gain = 574.762
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1473.031 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1473.031 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Synth Design complete | Checksum: d7f2859
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 9 Warnings, 7 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 1473.031 ; gain = 983.699
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1473.031 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Data/course/verilog/Labs/lab3/lab3.runs/synth_1/dynamic_scan.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dynamic_scan_utilization_synth.rpt -pb dynamic_scan_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  3 16:08:03 2024...
